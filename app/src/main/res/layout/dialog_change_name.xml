@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginLeft="@dimen/view_padding_extra_wide"
+    android:layout_marginRight="@dimen/view_padding_extra_wide"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harap menambahkan Nama"
+        android:textSize="17sp"
+        android:id="@+id/tvTitle"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_48"
+            android:layout_marginTop="@dimen/view_padding_wide"
+            android:textColorHint="@color/colorAccent"
+            app:hintEnabled="false">
+
+            <EditText
+                android:id="@+id/input_nama"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_48"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="@dimen/view_padding_normal"
+                android:hint="Masukan Nama"
+                android:importantForAutofill="no"
+                android:background="@android:color/transparent"
+                android:inputType="text"
+                android:maxLength="10"
+                android:textSize="@dimen/textsize"
+                tools:targetApi="o" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTextDialogDark"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_action_edit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/view_padding_wide"
+        android:layout_marginBottom="@dimen/view_padding_xx_wide"
+        android:background="@drawable/bg_shape_blue_rounded"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:text="EDIT"
+        android:textAllCaps="false" />
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginLeft="@dimen/view_padding_extra_wide"
+    android:layout_marginRight="@dimen/view_padding_extra_wide"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_kurobo"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apakah Anda ingin Log Out ?"
+        android:textSize="17sp"
+        android:id="@+id/tvTitle"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_ya"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/view_padding_wide"
+            android:layout_marginBottom="@dimen/view_padding_xx_wide"
+            android:background="@drawable/bg_shape_red_rounded"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="Ya"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_tidak"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/view_padding_wide"
+            android:layout_marginBottom="@dimen/view_padding_xx_wide"
+            android:background="@drawable/bg_shape_blue_rounded"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:text="Tidak"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</LinearLayout>
